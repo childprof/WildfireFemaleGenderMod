@@ -67,7 +67,7 @@ public class BreastPhysics {
 		if (!genderPlayer.getGender().canHaveBreasts()) {
 			targetBreastSize = 0;
 		} else {
-			float tightness = Mth.clamp(armor.tightness(), 0, 1);
+			float tightness = Mth.clamp(armor.tightness(), 0, 2);
 			//Scale breast size by how tight the armor is, clamping at a max adjustment of shrinking by 0.15
 			targetBreastSize *= 1 - 0.15F * tightness;
 		}
